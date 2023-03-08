@@ -1,0 +1,270 @@
+@font-face {
+  font-family: Duke-Fill;
+  src: url("./fonts/Duke-Fill.otf") format("opentype");
+}
+@font-face {
+  font-family: TT-Lakes-Medium;
+  src: url("./fonts/TT-Lakes-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: TT-Lakes-Bold;
+  src: url("./fonts/TT-Lakes-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: TT-Lakes-Condensed-Bold-DEMO;
+  src: url("./fonts/TT-Lakes-Condensed-Bold-DEMO.otf") format("opentype");
+}
+
+@keyframes popUp {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.2);
+  }
+}
+
+@keyframes bounce {
+
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes hide-element {
+  
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+
+}
+
+@keyframes show-element {
+  
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animate.animate--infinite {
+  animation-iteration-count: infinite;
+}
+
+.animate.animate--slow {
+  animation-duration: 10s;
+}
+
+.animate.animate--medium {
+  animation-duration: 5s;
+}
+
+.animate.animate--delay {
+  animation-delay: 4s;
+}
+
+.animate.popUp {
+  animation-name: popUp;
+  animation-timing-function: ease-in;
+}
+
+.animate.hide-element {
+  animation-name: hide-element;
+}
+
+.animate.show-element {
+  animation-name: show-element;
+}
+
+.animate.bounce {
+  animation-name: bounce
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  display:flex;
+  background-image: url('./images/background.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: fixed;
+  left: 248px
+}
+
+.header {
+  position: fixed;
+  color: black;
+  font-family: 'Duke-Fill';
+  font-size: 6.25vw;
+  letter-spacing: 0px;
+  left: 50%;
+  top: 5.729166666666667vw;
+  transform: translate(-50%, -50%);
+}
+
+.button-container {
+  position: fixed;
+  display: grid;
+  z-index: 1;
+}
+
+.date-holder {    
+  position: fixed;
+  color: black;
+  font-family: 'TT-Lakes-Medium';
+  font-size: 1.5625vw;
+  letter-spacing: 10px;
+  left: 50%;
+  top: 10.9375vw;
+  transform: translate(-50%, -50%);
+}
+
+.table {
+  position: fixed;
+  visibility: visible;
+}
+
+.region-header-emea {
+  position: fixed;
+  color: white;
+  font-family: 'Duke-Fill';
+  font-size: 5.729166666666667vw;
+  letter-spacing: 0px;
+  left: 21%;
+  top: 10.75vw;
+
+}
+
+.emea-city {
+  position: fixed;
+  color: white;
+  font-family: 'TT-Lakes-Medium';
+  font-size: 1.5625vw;
+  letter-spacing: 0px;
+  left: 17%;
+  top: 24.947916666666668vw;
+}
+
+.emea-date {
+  position: fixed;
+  color: white;
+  font-family: 'Duke-Fill';
+  font-size: 2.8645833333333335vw;
+  letter-spacing: 0px; 
+  line-height: 0.8854166666666666vw;
+  right: 56%;
+  text-align: right;
+  top: 23.697916666666668vw;
+}
+
+.region-header-na {
+  position: fixed;
+  color: white;
+  font-family: 'Duke-Fill';
+  font-size: 5.729166666666667vw;
+  letter-spacing: 0px;
+  left: 63%;
+  top: 10.75vw;
+}
+
+.na-city {
+  position: fixed;
+  color: white;
+  font-family: 'TT-Lakes-Medium';
+  font-size: 1.5625vw;
+  letter-spacing: 0px;
+  left: 57%;
+  top: 24.947916666666668vw; 
+}
+
+.na-date {
+  position: fixed;
+  color: white;
+  font-family: 'Duke-Fill';
+  font-size: 2.8645833333333335vw;
+  letter-spacing: 0px;
+  line-height: 0.8854166666666666vw;
+  right: 16%;
+  text-align: right;
+  top: 23.697916666666668vw;   /*24*/
+}
+
+.tune-button {
+  position: fixed;
+  color: white;
+  font-family: 'Duke-Fill';
+  font-size: 2.8645833333333335vw;
+  letter-spacing: 0px;
+  left: 50%;
+  top: 50.3125vw;
+  transform: translate(-50%, -50%);
+}
+
+.team-vs {
+  position: fixed;
+  color: black;
+  font-family: 'Duke-Fill';
+  font-size: 5.8645833333333335vw;
+  letter-spacing: 0px;
+  left: 48.3%;
+  top: 21.75vw;
+  visibility: hidden;
+}
+
+.team-b {
+  position: fixed;
+  left: 64%;
+  top: 26.75vw;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.team-a {
+  position: fixed;
+  left: 26%;
+  top: 26.75vw;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.is-visible {
+  visibility: visible;
+}
+
+
+
+

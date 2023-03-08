@@ -1,0 +1,15 @@
+{
+    "emea_finals": {
+        "los_angeles": "9:45AM",
+        "new_york_city": "12:45PM",
+        "london": "5:45PM",
+        "stockholm": "6:45PM"
+    },
+    "na_finals": {
+        "los_angeles": "9:45AM",
+        "new_york_city": "12:45PM",
+        "london": "5:45PM",
+        "stockholm": "6:45PM"
+    },
+    "data": "17/01/2021"
+}
