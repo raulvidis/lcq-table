@@ -1,1 +1,1 @@
-# lcq-table
+# https://lcq-table.web.app/
